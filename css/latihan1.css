@@ -1,0 +1,113 @@
+@media screen and (max-width: 400px) {
+    #logoheader {
+        max-height: 30px;
+    }
+
+    #section1 {
+        display: block;
+    }
+}
+
+a,
+abbr {
+    text-decoration: none;
+}
+
+a:hover {
+    color: coral;
+}
+
+article {
+    text-indent: 2rem;
+    margin: 1em 0;
+}
+
+li {
+    text-indent: 0;
+}
+
+img.img-logo {
+    max-height: 50px;
+}
+
+h1 {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+
+nav {
+    display: inline-flex;
+    float: right;
+    margin-right: 2rem;
+}
+
+ul>a {
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: green;
+}
+
+#section1 {
+    display: inline-flex;
+    gap: 2rem;
+}
+
+.article {
+    width: 50%;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    margin-left: 15px;
+    padding: 1em;
+    font-style: italic;
+    background-color: lightgray;
+}
+
+#carouselBuah {
+    max-height: 50vh;
+}
+
+.carousel-item>img {
+    height: 50vh;
+    max-width: 100%;
+}
+
+/* untuk menempelkan diskon */
+.img-promo {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.img-promo:hover {
+    animation: scale 2s alternate infinite;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(2) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(0.5) rotate(360deg);
+    }
+}

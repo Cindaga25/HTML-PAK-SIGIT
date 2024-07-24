@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+table {
+    width: 100%;
+    margin: 3rem 0;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+tr {
+    text-align: center;
+}
+
+thead > tr {
+    color: white;
+    background-color: darkgoldenrod;
+}
+
+thead th {
+    font-size: 1.25rem;
+}
+
+tbody th {
+    font-size: 1.25rem;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+td, th {
+    padding: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 1.25rem;
+    color: white;
+    border-radius: 0.25rem;
+    border: 1px solid hsl(215, 97%, 36%);
+    background: linear-gradient(to bottom, hsl(215, 91%, 60%), hsl(215, 98%, 22%));
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, hsl(142, 91%, 62%), hsl(140, 98%, 22%));
+}
+
+.label, .imgplanet {
+    display: none;
+}
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {     
+    tbody > tr {
+      width: calc(50% - 10px);
+      box-sizing: border-box;
+      display: inline-block;
+    }
+}
+
+@media screen and (max-width: 60rem) {
+    table,
+    tbody,
+    tr,
+    th,
+    td {
+        display: block;
+        text-align: left;
+    }
+    td:nth-child(1) {
+        font-size: 2rem;
+        display: block;
+    }
+
+    .wrapplanet {
+        position: relative;
+        height: 2rem;
+    }
+
+    .theplanet {
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        font-weight: bolder;
+        text-align: center;
+        justify-content: center;
+        z-index: 9;
+    }
+
+    .imgplanet {
+        display: block;
+        position: absolute;
+        top: 0%;
+        left: 0%;  
+        width: 100%;      
+        justify-content: right;
+        text-align: right;
+        z-index: 10;
+    }
+
+    .imgplanet > img {
+        height: 5rem;
+        max-width: 100%;
+        padding-right: 0.5rem;
+    }
+
+    caption {
+        display: block;
+        text-align: center;
+    }
+    thead {
+        display: none;
+    }
+    tbody > tr {
+        border: 1px solid hsl(215, 97%, 36%);
+        border-radius: 0.25rem;
+        margin: 0.5rem 0.25rem;
+    }
+    tbody > tr:nth-child(even) {
+        background-color: rgb(255, 255, 255);
+    }
+    .button {
+        display: block;
+        margin: 0;
+        border-radius: 0 0 0.25rem 0.25rem;
+    }
+    
+    td:nth-child(even) {
+        background-color: hsl(215, 88%, 78%);
+    }
+    td:nth-last-child(1){
+        background-color: white;
+        padding: 0;
+        
+    }
+
+    .label {
+        display: inline-block;
+        width: 40%;
+        font-weight: 700;
+    }
+
+
+
+};
+
